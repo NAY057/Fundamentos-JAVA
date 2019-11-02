@@ -1,0 +1,17 @@
+INICIO
+      numerico sueldobase,numhora,valorhora,totalsueldo,descuento;
+      texto nombre;
+
+      imprima "digite su nombre";
+      lea nombre;
+      imprima "digite su numero de horas trabajadas";
+      lea numhora;
+
+      valorhora=2000;
+      sueldobase=numhora*valorhora;
+      descuento=sueldobase*0.1;
+      totalsueldo=sueldobase-descuento;
+      imprima nombre+"su salario es ="+totalsueldo;
+      
+
+FINAL

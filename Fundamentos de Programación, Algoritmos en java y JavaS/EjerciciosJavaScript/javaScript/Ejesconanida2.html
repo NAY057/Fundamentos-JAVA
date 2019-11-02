@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplo</title>
+	</head>
+    <body>
+		<h1>2 EJEMPLO</h1>
+	
+		<script>
+		document.write("<h2>");
+		var sueldo, antiguedad, aumento;
+		sueldo=parseInt(prompt("Ingrese el sueldo actual"));
+		antiguedad=parseInt(prompt("Ingrese los años de antiguedad"));
+		aumento=0;
+		if(sueldo<500 && antiguedad>=10)
+		{
+			aumento=sueldo*0.2;
+			sueldo=sueldo+aumento;
+			document.write("usted tiene un autmento del 20%, su sueldo es: "+sueldo);
+		}
+		else{
+			if (sueldo<500 && antiguedad<10)
+			  {
+			  	aumento=sueldo*0.05;
+			  	sueldo=sueldo+aumento;
+			  	document.write("usted tiene un aumento del 5%, su sueldo nuevo es: "+sueldo);
+			  }
+			  else{ 
+			  	 if (sueldo>=500){
+			  	 	document.write("usted no tiene ningun descuento");
+			  	  }
+
+			      }
+
+		    }
+
+
+
+
+		document.write("</h2>");	
+		</script>
+		
+	<body> 	
+</html>
+
+

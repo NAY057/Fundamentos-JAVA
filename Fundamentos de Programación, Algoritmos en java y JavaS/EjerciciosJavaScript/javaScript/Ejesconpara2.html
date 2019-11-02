@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplo</title>
+	</head>
+    <body>
+		<h1>2 EJEMPLO</h1>
+	
+		<script>
+		document.write("<h2>");
+		var codigo,menu,num1,num2,suma,resta,mult,div,pregunta;
+
+		for(pregunta="si";pregunta=="si";pregunta=prompt("Si desea continuar ingrese si, de lo contrario el programa terminara"))
+        {
+
+        menu="Menu\n\n";
+		menu+="1. Suma\n";
+		menu+="2. Resta\n";
+		menu+="3. Multiplicacion\n";
+		menu+="4. Division\n";
+		menu+="Ingrese el codigo";
+		codigo=parseInt(prompt(menu));
+		switch(codigo){
+			case 1:num1=parseFloat(prompt("Ingrese el numero 1"));	
+				num2=parseFloat(prompt("Ingrese el numero 2"));
+				suma=num1+num2;
+			document.write("La suma es: "+suma+"<br>");
+			break;
+
+			case 2:num1=parseFloat(prompt("Ingrese el numero 1"));	
+				num2=parseFloat(prompt("Ingrese el numero 2"));
+				resta=num1-num2;
+			document.write("La resta es: "+resta+"<br>");
+			break;
+
+			case 3:num1=parseFloat(prompt("Ingrese el numero 1"));	
+				num2=parseFloat(prompt("Ingrese el numero 2"));
+				mult=num1*num2; 
+			document.write("La Multiplicacion es: "+mult+"<br>");
+			break;
+
+			case 4:num1=parseFloat(prompt("Ingrese el numero 1"));	
+				num2=parseFloat(prompt("Ingrese el numero 2"));
+				if(num2>0){
+				div=num1/num2;
+				document.write("La division es: "+div+"<br>");	
+				}
+				else{
+					document.write("El segundo numero debe ser mayor a 0"+"<br>");
+				}	
+			break;
+
+			default: document.write("El codigo no existe!"+"<br>");
+				}
+
+
+			
+		}
+		
+		
+
+
+
+
+		document.write("</h2>");	
+		</script>
+		
+	<body> 	
+</html>
+
+

@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplo</title>
+	</head>
+    <body>
+		<h1>2 EJEMPLO</h1>
+	
+		<script>
+		document.write("<h2>");
+		var valorcompra,descuento,valorfinal;
+		valorcompra=parseFloat(prompt("Ingrese el valor de la compra"));
+		descuento=0;
+		valorfinal=valorcompra;
+		if (valorcompra>=100000) 
+		{
+			descuento=valorcompra*0.5;
+			valorfinal=valorcompra-descuento;
+			document.write("Se aplico un descuento del 50% equivalente a: "+descuento+"<br>");
+		}
+		else
+		{
+			descuento=valorcompra*0.1;
+			valorfinal=valorcompra-descuento;
+			document.write("Se aplico un descuento del 10% equivalente a: "+descuento+"<br>");
+		}
+
+		document.write("El valor de su compra es: "+valorfinal);
+		document.write("</h2>");	
+		</script>
+	<body> 	
+</html>
+
+
